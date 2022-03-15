@@ -26,7 +26,7 @@ public:
         arr = temp;
     }
 
-    void del(int num)
+    void erase(int num)
     {
         size--;
         int *temp = new int[size + 1];
@@ -103,7 +103,7 @@ int main()
             case 3:
                 cout << "Enter a number that you want to delete: "; // only deletes the last element of array
                 cin >> num;
-                P1.del(num);
+                P1.erase(num);
                 break;
             case 4:
                 P1.test(); // check if the element in an array is even or odd
